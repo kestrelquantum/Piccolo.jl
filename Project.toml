@@ -1,3 +1,8 @@
+name = "Pico"
+uuid = "c4671d76-df94-11ed-2057-43d4fd632fad"
+authors = ["Aaron Trowbridge <aaron.j.trowbridge@gmail.com> and contributors"]
+version = "0.1.0"
+
 [deps]
 IterativeLearningControl = "55efb022-e1be-4044-9089-57a478d003fb"
 NamedTrajectories = "538bc3a1-5ab9-4fc3-b776-35ca1e893e08"
