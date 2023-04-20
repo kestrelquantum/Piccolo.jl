@@ -2,7 +2,13 @@
 A convenience meta-package for quantum optimal control using the Pade Integrator COllocation (PICO) method.
 
 ## Usage
-This package reexports the following packages
+
+Just run
+```julia
+using Pico
+```
+
+and this package reexports the following packages
 
 - [QuantumCollocation.jl](https://github.com/aarontrowbridge/QuantumCollocation.jl)
 - [NamedTrajectories.jl](https://github.com/aarontrowbridge/NamedTrajectories.jl)
