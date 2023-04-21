@@ -2,7 +2,7 @@
 
 julia_version = "1.8.5"
 manifest_format = "2.0"
-project_hash = "cc11d1f04330be9d0359ef95fed009075c3ff201"
+project_hash = "befe2028662d1669eb4feff63b6a158ed37e60dc"
 
 [[deps.ANSIColoredPrinters]]
 git-tree-sha1 = "574baf8110975760d391c710b6341da1afa48d8c"
@@ -762,10 +762,10 @@ uuid = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
 version = "1.4.0"
 
 [[deps.IterativeLearningControl]]
-deps = ["BenchmarkTools", "CairoMakie", "Conda", "Einsum", "ExponentialAction", "FileIO", "ForwardDiff", "ImageMagick", "JLD2", "LinearAlgebra", "NamedTrajectories", "OSQP", "PyCall", "QuantumCollocation", "Reexport", "SparseArrays", "Statistics", "Zygote"]
-git-tree-sha1 = "8689dde7c231be6f5c082a6f051afc142f39a285"
+deps = ["BenchmarkTools", "CairoMakie", "Conda", "Einsum", "ExponentialAction", "FileIO", "ForwardDiff", "ImageMagick", "JLD2", "LinearAlgebra", "NamedTrajectories", "OSQP", "PyCall", "QuantumCollocation", "Reexport", "SparseArrays", "Statistics", "TrajectoryIndexingUtils", "Zygote"]
+git-tree-sha1 = "ec53e7a0f491bf2c12177fb65fc28df179093022"
 uuid = "55efb022-e1be-4044-9089-57a478d003fb"
-version = "0.1.0"
+version = "0.1.1"
 
 [[deps.IteratorInterfaceExtensions]]
 git-tree-sha1 = "a3f24677c21f5bbe9d2a714f95dcd58337fb2856"
