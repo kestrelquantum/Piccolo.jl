@@ -1,11 +1,12 @@
-# Pico.jl
+# Piccolo.jl
 A convenience meta-package for quantum optimal control using the Pade Integrator COllocation (PICO) method.
+
 
 ## Usage
 
 Just run
 ```julia
-using Pico
+using Piccolo
 ```
 
 and this package reexports the following packages
@@ -19,5 +20,5 @@ and this package reexports the following packages
 This package is not yet registered so install with
 ```julia
 using Pkg
-Pkg.add(url="https://github.com/aarontrowbridge/Pico.jl.git", rev="main")
+Pkg.add(url="https://github.com/aarontrowbridge/Piccolo.jl.git", rev="main")
 ```

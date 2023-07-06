@@ -1,4 +1,4 @@
-module Pico
+module Piccolo
 
 using Reexport
 
