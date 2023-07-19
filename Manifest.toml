@@ -2,7 +2,7 @@
 
 julia_version = "1.9.2"
 manifest_format = "2.0"
-project_hash = "60a6680fcc543bb637fdcb5dd6de7e8c9ce3542d"
+project_hash = "ac5b720b93ebf7862b7aa4fab5bf5c09c1c2fc17"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "e58c18d2312749847a74f5be80bb0fa53da102bd"
@@ -1027,9 +1027,7 @@ version = "1.8.0"
 
 [[deps.IterativeLearningControl]]
 deps = ["BasicInterpolators", "BenchmarkTools", "CairoMakie", "Conda", "Distributions", "Einsum", "ExponentialAction", "FileIO", "ForwardDiff", "ImageMagick", "JLD2", "LinearAlgebra", "NamedTrajectories", "OSQP", "PyCall", "QuantumCollocation", "QuantumOptics", "Random", "Reexport", "Revise", "SparseArrays", "Statistics", "Suppressor", "TrajectoryIndexingUtils", "Zygote"]
-git-tree-sha1 = "cfb7db8c4df12510492daaacb3f3ffaf393d8532"
-repo-rev = "main"
-repo-url = "https://github.com/aarontrowbridge/IterativeLearningControl.jl.git"
+path = "../IterativeLearningControl.jl"
 uuid = "55efb022-e1be-4044-9089-57a478d003fb"
 version = "0.1.1"
 
@@ -2032,6 +2030,12 @@ git-tree-sha1 = "9290c2671b0871b17cfafb73bf27bf57b361007b"
 uuid = "5717a53b-5d69-4fa3-b976-0bf2f97ca1e5"
 version = "0.3.1"
 
+[[deps.QuantumIterativeLearningControl]]
+deps = ["BasicInterpolators", "BenchmarkTools", "CairoMakie", "Conda", "Distributions", "Einsum", "ExponentialAction", "FileIO", "ForwardDiff", "ImageMagick", "JLD2", "LinearAlgebra", "ManifoldDiff", "Manifolds", "NamedTrajectories", "OSQP", "PyCall", "QuantumCollocation", "QuantumOptics", "Random", "Reexport", "Revise", "SparseArrays", "Statistics", "Suppressor", "TrajectoryIndexingUtils", "Zygote"]
+path = "../QuantumIterativeLearningControl.jl"
+uuid = "b2c2a83c-20aa-4d51-8862-bb551092e619"
+version = "0.1.1"
+
 [[deps.QuantumOptics]]
 deps = ["Arpack", "DiffEqBase", "DiffEqCallbacks", "FFTW", "ForwardDiff", "IterativeSolvers", "LinearAlgebra", "LinearMaps", "OrdinaryDiffEq", "QuantumOpticsBase", "Random", "RecursiveArrayTools", "Reexport", "SparseArrays", "StochasticDiffEq", "WignerSymbols"]
 git-tree-sha1 = "631484ed14003053af04f3bc002bde1e2db2ec4d"
@@ -2230,9 +2234,9 @@ version = "0.1.8"
 
 [[deps.SciMLOperators]]
 deps = ["ArrayInterface", "DocStringExtensions", "Lazy", "LinearAlgebra", "Setfield", "SparseArrays", "StaticArraysCore", "Tricks"]
-git-tree-sha1 = "3ff715d32b305c7793683953f718c5c5d002ba3c"
+git-tree-sha1 = "745755a5b932c9a664d7e9e4beb60c692b211d4b"
 uuid = "c0aeaf25-5076-4817-a8d5-81caf7dfa961"
-version = "0.3.4"
+version = "0.3.5"
 
 [[deps.Scratch]]
 deps = ["Dates"]

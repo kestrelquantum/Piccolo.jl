@@ -5,6 +5,6 @@ using Reexport
 @reexport using TrajectoryIndexingUtils
 @reexport using NamedTrajectories
 @reexport using QuantumCollocation
-@reexport using IterativeLearningControl
+@reexport using QuantumIterativeLearningControl
 
 end
