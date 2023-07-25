@@ -2,7 +2,7 @@
 
 julia_version = "1.9.2"
 manifest_format = "2.0"
-project_hash = "5871e6caae331aa88ba27b63ba3fc1baa48aba6d"
+project_hash = "46e88d19697c39abf3b74eefcda4b4da630c5d53"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "e58c18d2312749847a74f5be80bb0fa53da102bd"
@@ -978,18 +978,6 @@ git-tree-sha1 = "bca20b2f5d00c4fbc192c3212da8fa79f4688009"
 uuid = "82e4d734-157c-48bb-816b-45c225c6df19"
 version = "0.6.7"
 
-[[deps.ImageMagick]]
-deps = ["FileIO", "ImageCore", "ImageMagick_jll", "InteractiveUtils"]
-git-tree-sha1 = "b0b765ff0b4c3ee20ce6740d843be8dfce48487c"
-uuid = "6218d12a-5da1-5696-b52f-db25d2ecc6d1"
-version = "1.3.0"
-
-[[deps.ImageMagick_jll]]
-deps = ["JpegTurbo_jll", "Libdl", "Libtiff_jll", "Pkg", "Zlib_jll", "libpng_jll"]
-git-tree-sha1 = "1c0a2295cca535fabaf2029062912591e9b61987"
-uuid = "c73af94c-d91f-53ed-93a7-00f77d67a9d7"
-version = "6.9.10-12+3"
-
 [[deps.ImageMetadata]]
 deps = ["AxisArrays", "ImageAxes", "ImageBase", "ImageCore"]
 git-tree-sha1 = "355e2b974f2e3212a75dfb60519de21361ad3cb7"
@@ -1072,12 +1060,6 @@ version = "0.1.1"
 git-tree-sha1 = "4ced6667f9974fc5c5943fa5e2ef1ca43ea9e450"
 uuid = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
 version = "1.8.0"
-
-[[deps.IterativeLearningControl]]
-deps = ["BasicInterpolators", "BenchmarkTools", "CairoMakie", "Conda", "Distributions", "Einsum", "ExponentialAction", "FileIO", "ForwardDiff", "ImageMagick", "JLD2", "LinearAlgebra", "NamedTrajectories", "OSQP", "PyCall", "QuantumCollocation", "QuantumOptics", "Random", "Reexport", "Revise", "SparseArrays", "Statistics", "Suppressor", "TrajectoryIndexingUtils", "Zygote"]
-path = "../IterativeLearningControl.jl"
-uuid = "55efb022-e1be-4044-9089-57a478d003fb"
-version = "0.1.1"
 
 [[deps.IterativeSolvers]]
 deps = ["LinearAlgebra", "Printf", "Random", "RecipesBase", "SparseArrays"]
@@ -1679,8 +1661,10 @@ uuid = "356022a1-0364-5f58-8944-0da4b18d706f"
 version = "0.2.50"
 
 [[deps.NamedTrajectories]]
-deps = ["CairoMakie", "DataStructures", "Documenter", "JLD2", "LaTeXStrings", "Latexify", "Reexport", "Revise", "Unidecode"]
-path = "../NamedTrajectories.jl"
+deps = ["CairoMakie", "DataStructures", "Documenter", "JLD2", "LaTeXStrings", "Latexify", "OhMyREPL", "Reexport", "Revise", "Unidecode"]
+git-tree-sha1 = "4c26fdb2d850f074e1c651fbf16fc19247d5369a"
+repo-rev = "main"
+repo-url = "https://github.com/aarontrowbridge/NamedTrajectories.jl.git"
 uuid = "538bc3a1-5ab9-4fc3-b776-35ca1e893e08"
 version = "0.1.2"
 
@@ -2026,12 +2010,6 @@ git-tree-sha1 = "d7a7aef8f8f2d537104f170139553b14dfe39fe9"
 uuid = "92933f4c-e287-5a05-a399-4b506db050ca"
 version = "1.7.2"
 
-[[deps.PyCall]]
-deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Serialization", "VersionParsing"]
-git-tree-sha1 = "43d304ac6f0354755f1d60730ece8c499980f7ba"
-uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
-version = "1.96.1"
-
 [[deps.PythonCall]]
 deps = ["CondaPkg", "Dates", "Libdl", "MacroTools", "Markdown", "Pkg", "REPL", "Requires", "Serialization", "Tables", "UnsafePointers"]
 git-tree-sha1 = "0d15cb32f52654921169b4305dae8f66a0e345dc"
@@ -2064,7 +2042,9 @@ version = "2.8.2"
 
 [[deps.QuantumCollocation]]
 deps = ["BenchmarkTools", "CairoMakie", "Colors", "Distributions", "Documenter", "Einsum", "ExponentialAction", "FFTW", "FiniteDiff", "ForwardDiff", "HDF5", "IJulia", "Ipopt", "IterTools", "JLD2", "LaTeXStrings", "Libdl", "LinearAlgebra", "LiveServer", "Makie", "Manifolds", "MathOptInterface", "NamedTrajectories", "PGFPlotsX", "Plots", "PythonPlot", "Random", "Reexport", "Revise", "SignalAnalysis", "SparseArrays", "Symbolics", "TrajectoryIndexingUtils", "Unitful", "Zygote"]
-path = "../QuantumCollocation.jl"
+git-tree-sha1 = "aef5c24aa2b730d8cdac160143b4775ca848d26a"
+repo-rev = "main"
+repo-url = "https://github.com/aarontrowbridge/QuantumCollocation.jl.git"
 uuid = "0dc23a59-5ffb-49af-b6bd-932a8ae77adf"
 version = "0.1.3"
 
@@ -2075,7 +2055,7 @@ uuid = "5717a53b-5d69-4fa3-b976-0bf2f97ca1e5"
 version = "0.3.1"
 
 [[deps.QuantumIterativeLearningControl]]
-deps = ["BasicInterpolators", "BenchmarkTools", "CairoMakie", "Conda", "Distributions", "Einsum", "ExponentialAction", "FileIO", "ForwardDiff", "ImageMagick", "JLD2", "LinearAlgebra", "ManifoldDiff", "Manifolds", "NamedTrajectories", "OSQP", "OhMyREPL", "PyCall", "QuantumCollocation", "QuantumOptics", "Random", "Reexport", "Revise", "SparseArrays", "Statistics", "Suppressor", "TrajectoryIndexingUtils", "Zygote"]
+deps = ["BasicInterpolators", "BenchmarkTools", "CairoMakie", "Distributions", "Einsum", "ExponentialAction", "FileIO", "ForwardDiff", "JLD2", "LinearAlgebra", "Manifolds", "NamedTrajectories", "OSQP", "OhMyREPL", "QuantumCollocation", "QuantumOptics", "Random", "Reexport", "Revise", "SparseArrays", "Statistics", "TrajectoryIndexingUtils"]
 path = "../QuantumIterativeLearningControl.jl"
 uuid = "b2c2a83c-20aa-4d51-8862-bb551092e619"
 version = "0.1.1"
@@ -2581,12 +2561,6 @@ uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
 deps = ["Artifacts", "Libdl", "Pkg", "libblastrampoline_jll"]
 uuid = "bea87d4a-7f5b-5778-9afe-8cc45184846c"
 version = "5.10.1+6"
-
-[[deps.Suppressor]]
-deps = ["Logging"]
-git-tree-sha1 = "37d1976ca8368f6adbe1d65a4deeeda6ee7faa31"
-uuid = "fd094767-a336-5f1f-9728-57cf17d0bbfb"
-version = "0.2.4"
 
 [[deps.SymbolicIndexingInterface]]
 deps = ["DocStringExtensions"]
