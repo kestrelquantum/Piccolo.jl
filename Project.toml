@@ -16,7 +16,6 @@ TrajectoryIndexingUtils = "6dad8b7f-dd9a-4c28-9b70-85b9a079bfc8"
 
 [compat]
 NamedTrajectories = "0.1"
-QuantumCollocation = "0.1"
 Reexport = "1.2"
 TrajectoryIndexingUtils = "0.1"
 julia = "1.8"
