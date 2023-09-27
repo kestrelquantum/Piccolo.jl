@@ -17,8 +17,8 @@ and this package reexports the following packages
 - [IterativeLearningControl.jl](https://github.com/aarontrowbridge/IterativeLearningControl.jl)
 
 ## Installation
-This package is not yet registered so install with
+This package is registered! To install just run 
 ```julia
-using Pkg
-Pkg.add(url="https://github.com/aarontrowbridge/Piccolo.jl.git", rev="main")
+] add Piccolo
 ```
+in the REPL
