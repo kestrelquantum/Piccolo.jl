@@ -22,7 +22,6 @@ and this package reexports the following packages
 - [QuantumCollocation.jl](https://github.com/aarontrowbridge/QuantumCollocation.jl)
 - [NamedTrajectories.jl](https://github.com/aarontrowbridge/NamedTrajectories.jl)
 - [TrajectoryIndexingUtils.jl](https://github.com/aarontrowbridge/TrajectoryIndexingUtils.jl)
-- [QuantumIterativeLearningControl.jl](https://github.com/aarontrowbridge/QuantumIterativeLearningControl.jl)
 
 ## Installation
 This package is registered! To install just run 
