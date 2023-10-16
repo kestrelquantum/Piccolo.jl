@@ -29,3 +29,16 @@ This package is registered! To install just run
 ] add Piccolo
 ```
 in the REPL
+
+## Local Development
+
+To develop locally, clone this repo and then instantiate the environment in the REPL by running first
+```julia
+] activate .
+```
+And then, 
+```julia
+] instantiate 
+```
+Both commands should be run in pkg mode, which is activated by typing `]` in the REPL.
+
