@@ -48,3 +48,9 @@ julia --project=.
 ```
 from the Piccolo.jl directory.
 
+To run the scripts use, e.g.,
+```bash
+julia -t <num_threads> --project=. examples/three_qubit_swap/swap.jl
+```
+where `<num_threads>` is the number of threads you want to use as QuantumCollocation.jl takes advantage of multithreading.  The `--project=.` flag is necessary to make sure the correct environment is loaded.
+
