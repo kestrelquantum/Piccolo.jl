@@ -42,3 +42,9 @@ And then,
 ```
 Both commands should be run in pkg mode, which is activated by typing `]` in the REPL.
 
+To start julia with the current environment, run
+```bash
+julia --project=.
+```
+from the Piccolo.jl directory.
+
