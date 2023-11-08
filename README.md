@@ -1,5 +1,5 @@
 <center>
-<img src="piccolo_logo.svg" alt="logo" width="400"/>
+<img src="assets/piccolo_logo.svg" alt="logo" width="50%"/>
 </center>
 
 ## Description
@@ -18,7 +18,7 @@ To see a detailed description of the PICO method, check out our paper [here](htt
 
 Just run
 ```julia
-using Pico
+using Piccolo
 ```
 
 and this package reexports the following packages
@@ -49,7 +49,7 @@ To start julia with the current environment, run
 ```bash
 julia --project
 ```
-from the Pico.jl directory.
+from the Piccolo.jl directory.
 
 To run the scripts use, e.g.,
 ```bash
