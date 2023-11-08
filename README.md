@@ -1,6 +1,6 @@
-<center>
+<p align="center">
 <img src="assets/piccolo_logo.svg" alt="logo" width="50%"/>
-</center>
+</p>
 
 ## Description
 Piccolo.jl is a meta-package for quantum optimal control using the Pade Integrator COllocation (PICO) method.
