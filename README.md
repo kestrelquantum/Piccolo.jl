@@ -2,6 +2,8 @@
 <img src="assets/piccolo_logo.svg" alt="logo" width="50%"/>
 </p>
 
+> *Technologies are ways of commandeering nature: the sky belongs to those who know how to fly; the sea belongs to those who know swim and navigate. &ndash; Simone de Beauvoir*
+
 ## Description
 Piccolo.jl is a meta-package for quantum optimal control using the Pade Integrator COllocation (PICO) method.
 
