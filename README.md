@@ -2,6 +2,8 @@
 <img src="assets/piccolo_logo.svg" alt="logo" width="50%"/>
 </p>
 
+[![Unitary Fund](https://img.shields.io/badge/Supported%20By-Unitary%20Fund-FFFF00.svg)](https://unitary.fund)
+
 > *"Technologies are ways of commandeering nature: the sky belongs to those who know how to fly; the sea belongs to those who know how to swim and navigate." &ndash; Simone de Beauvoir*
 
 ## Description
