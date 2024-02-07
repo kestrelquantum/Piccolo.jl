@@ -11,11 +11,11 @@ Piccolo.jl is a meta-package for quantum optimal control using the Pade Integrat
 
 For documentation please see the individual packages.
 
-### JuliCon 2033 Talk
+### JuliaCon 2023 Talk
 To see an overview of the PICO method and a demo of how to use this package, check out our recorded talk at JuliaCon 2023 [here](https://www.youtube.com/watch?v=NBdck6UX0Tc).
 
 ### Direct Collocation for Quantum Optimal Control
-To see a detailed description of the PICO method, check out our paper [here](https://arxiv.org/abs/2305.03261).  It won 2nd best paper in the QTEM category at IEEE QCE 2023! 
+To see a detailed description of the PICO method, check out our paper [here](https://arxiv.org/abs/2305.03261). It won 2nd best paper in the QTEM category at IEEE QCE 2023! 
 
 
 ## Usage
