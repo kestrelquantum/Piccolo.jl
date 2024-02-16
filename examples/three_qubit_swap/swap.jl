@@ -130,7 +130,7 @@ println("Final fidelity: ", fid)
 
 info = Dict(
     "fidelity" => fid,
-    "pulse duration" => times(prob.trajectory)[end],
+    "pulse duration" => get_times(prob.trajectory)[end],
 )
 
 println("saving results...")

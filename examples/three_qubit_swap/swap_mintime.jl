@@ -26,7 +26,7 @@ prob = UnitaryMinimumTimeProblem(joinpath(@__DIR__, data_path); D=D, final_fidel
 
 println()
 println("initial fidelity: ", unitary_fidelity(prob))
-println("initial duration: ", times(prob.trajectory)[end])
+println("initial duration: ", get_times(prob.trajectory)[end])
 println()
 
 plot(plot_path, prob.trajectory, [:Ũ⃗, :a]; ignored_labels=[:Ũ⃗])
@@ -37,7 +37,7 @@ plot(plot_path, prob.trajectory, [:Ũ⃗, :a]; ignored_labels=[:Ũ⃗])
 
 # calculating unitary fidelity
 fid = unitary_fidelity(prob)
-dur = times(prob.trajectory)[end]
+dur = get_times(prob.trajectory)[end]
 println("final fidelity: ", fid)
 println("final duration: ", dur)
 println()
