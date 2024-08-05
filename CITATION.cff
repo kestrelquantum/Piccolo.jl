@@ -1,0 +1,31 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Piccolo.jl
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Aaron
+    family-names: Trowbridge
+    email: atrowbri@andrew.cmu
+    affiliation: Carnegie Mellon University
+  - given-names: Andy
+    family-names: Goldschmidt
+    email: andygold@uchicago.edu
+    affiliation: University of Chicago
+  - given-names: Aditya
+    family-names: Bhardwaj
+    email: a7b@uchicago.edu
+    affiliation: University of Chicago
+  - given-names: Jack
+    family-names: Champagne
+    email: jchampag@andrew.cmu.edu
+    affiliation: Carnegie Mellon University
+repository-code: 'https://github.com/kestrelquantum/Piccolo.jl'
+abstract: >-
+  A metapackage offering an integrated solution for solving
+  quantum optimal control problems using direct collocation.
+license: MIT
