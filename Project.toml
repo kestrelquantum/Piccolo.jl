@@ -1,7 +1,7 @@
 name = "Piccolo"
 uuid = "c4671d76-df94-11ed-2057-43d4fd632fad"
 authors = ["Aaron Trowbridge <aaron.j.trowbridge@gmail.com> and contributors"]
-version = "0.2.2"
+version = "0.3.0"
 
 [deps]
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
@@ -15,7 +15,7 @@ TrajectoryIndexingUtils = "6dad8b7f-dd9a-4c28-9b70-85b9a079bfc8"
 CairoMakie = "0.12"
 IJulia = "1.24"
 NamedTrajectories = "0.2"
-QuantumCollocation = "0.2"
+QuantumCollocation = "0.3"
 Reexport = "1.2"
 TrajectoryIndexingUtils = "0.1"
 julia = "1.10"
