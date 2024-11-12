@@ -1,14 +1,10 @@
-<p align="center">
-<img src="assets/piccolo_logo.svg" alt="logo" width="50%"/>
-</p>
+# Piccolo.jl
 
-<div align="center">
+![piccolo](assets/piccolo_logo.svg)
   
 | **Documentation** | **Build Status** | **Support** | **License** |
 |:-----------------:|:----------------:|:-----------:|:---------:|
 | [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://kestrelquantum.github.io/Piccolo.jl/docs/) | [![Build Status](https://github.com/aarontrowbridge/QuantumCollocation.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/kestrelquantum/QuantumCollocation.jl/actions/workflows/CI.yml?query=branch%3Amain) [![Coverage](https://codecov.io/gh/kestrelquantum/QuantumCollocation.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/kestrelquantum/QuantumCollocation.jl)| [![Unitary Fund](https://img.shields.io/badge/Supported%20By-Unitary%20Fund-FFFF00.svg)](https://unitary.fund) | [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-</div>
 
 > *"Technologies are ways of commandeering nature: the sky belongs to those who know how to fly; the sea belongs to those who know how to swim and navigate." &ndash; Simone de Beauvoir*
 
