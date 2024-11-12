@@ -17,7 +17,7 @@ Cloning packages into: $(clonedir)
 Building aggregate site into: $(outpath)
 """
 
-@info "Building Documenter site for MultiDocumenter"
+@info "Building Documenter site for Piccolo.jl"
 open(joinpath(@__DIR__, "src", "index.md"), write = true) do io
     write(io, read(joinpath(@__DIR__, "..", "README.md")))
     write(
@@ -27,7 +27,7 @@ open(joinpath(@__DIR__, "src", "index.md"), write = true) do io
 ## Docstrings
 
 ```@autodocs
-Modules = [MultiDocumenter]
+Modules = [Piccolo]
 ```
 """,
     )
@@ -46,7 +46,7 @@ docs = [
     MultiDocumenter.MultiDocRef(
         upstream = joinpath(@__DIR__, "build"),
         path = "docs",
-        name = "MultiDocumenter",
+        name = "Piccolo",
         fix_canonical_url = false,
     ),
     MultiDocumenter.MultiDocRef(

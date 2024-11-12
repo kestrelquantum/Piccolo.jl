@@ -1,1 +1,4 @@
 .CondaPkg/*
+docs/build
+docs/clones
+docs/out
