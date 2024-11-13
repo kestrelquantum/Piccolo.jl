@@ -1,0 +1,229 @@
+<!DOCTYPE html><HTML lang="en"><head><script charset="utf-8" src="../../../../assets/default/multidoc_injector.js" type="text/javascript"></script><script charset="utf-8" type="text/javascript">window.MULTIDOCUMENTER_ROOT_PATH = '/'</script><script charset="utf-8" src="../../../../assets/default/flexsearch.bundle.js" type="text/javascript"></script><script charset="utf-8" src="../../../../assets/default/flexsearch_integration.js" type="text/javascript"></script><meta charset="UTF-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Quickstart Guide · QuantumCollocation.jl</title><meta content="Quickstart Guide · QuantumCollocation.jl" name="title"/><meta content="Quickstart Guide · QuantumCollocation.jl" property="og:title"/><meta content="Quickstart Guide · QuantumCollocation.jl" property="twitter:title"/><meta content="Documentation for QuantumCollocation.jl." name="description"/><meta content="Documentation for QuantumCollocation.jl." property="og:description"/><meta content="Documentation for QuantumCollocation.jl." property="twitter:description"/><meta content="https://kestrelquantum.github.io/QuantumCollocation.jl/generated/quickstart/" property="og:url"/><meta content="https://kestrelquantum.github.io/QuantumCollocation.jl/generated/quickstart/" property="twitter:url"/><link href="https://kestrelquantum.github.io/QuantumCollocation/dev/generated/quickstart/" rel="canonical"/><script data-outdated-warner="" src="../../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="../.."</script><script data-main="../../assets/documenter.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script><script src="../../search_index.js"></script><script src="../../siteinfo.js"></script><script src="../../../versions.js"></script><link class="docs-theme-link" data-theme-name="catppuccin-mocha" href="../../assets/themes/catppuccin-mocha.css" rel="stylesheet" type="text/css"/><link class="docs-theme-link" data-theme-name="catppuccin-macchiato" href="../../assets/themes/catppuccin-macchiato.css" rel="stylesheet" type="text/css"/><link class="docs-theme-link" data-theme-name="catppuccin-frappe" href="../../assets/themes/catppuccin-frappe.css" rel="stylesheet" type="text/css"/><link class="docs-theme-link" data-theme-name="catppuccin-latte" href="../../assets/themes/catppuccin-latte.css" rel="stylesheet" type="text/css"/><link class="docs-theme-link" data-theme-name="documenter-dark" data-theme-primary-dark="" href="../../assets/themes/documenter-dark.css" rel="stylesheet" type="text/css"/><link class="docs-theme-link" data-theme-name="documenter-light" data-theme-primary="" href="../../assets/themes/documenter-light.css" rel="stylesheet" type="text/css"/><script src="../../assets/themeswap.js"></script><link href="../../../../assets/default/multidoc.css" rel="stylesheet" type="text/css"/><link href="../../../../assets/default/flexsearch.css" rel="stylesheet" type="text/css"/></head><body><nav id="multi-page-nav"><div class="hidden-on-mobile" id="nav-items"><a class="nav-link nav-item" href="../../../../docs/">Piccolo</a><a class="nav-link active nav-item" href="../../../">QuantumCollocation.jl</a><div class="nav-dropdown"><button class="nav-item dropdown-label">Utilities</button><ul class="nav-dropdown-container"><a class="nav-link nav-item" href="../../../../NamedTrajectories/">NamedTrajectories.jl</a><a class="nav-link nav-item" href="../../../../TrajectoryIndexingUtils/">TrajectoryIndexingUtils.jl</a></ul></div><div class="search nav-item"><input id="search-input" placeholder="Search..."/><ul class="suggestions hidden" id="search-result-container"></ul><div class="search-keybinding">/</div></div></div><button id="multidoc-toggler"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg></button></nav><div id="documenter"><nav class="docs-sidebar"><a class="docs-logo" href="../../"><img alt="QuantumCollocation.jl logo" src="../../assets/logo.svg"/></a><div class="docs-package-name"><span class="docs-autofit"><a href="../../">QuantumCollocation.jl</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li><a class="tocitem" href="../../">Home</a></li><li class="is-active"><a class="tocitem" href="">Quickstart Guide</a><ul class="internal"><li><a class="tocitem" href="#Basic-Usage"><span>Basic Usage</span></a></li><li><a class="tocitem" href="#Minimum-Time-Problems"><span>Minimum Time Problems</span></a></li></ul></li><li><a class="tocitem" href="../../contribution_guide/">Contribution Guide</a></li><li><span class="tocitem">Manual</span><ul><li><a class="tocitem" href="../man/problem_templates/">Problem Templates</a></li><li><a class="tocitem" href="../man/embedded_operators/">Embedded Operators</a></li><li><a class="tocitem" href="../man/ipopt_callbacks/">Callbacks</a></li></ul></li><li><span class="tocitem">Examples</span><ul><li><a class="tocitem" href="../examples/two_qubit_gates/">Two Qubit Gates</a></li><li><a class="tocitem" href="../examples/multilevel_transmon/">Multilevel Transmon</a></li></ul></li><li><a class="tocitem" href="../../lib/">Library</a></li><li><a class="tocitem" href="../../release_notes/">Release Notes</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" href="#" id="documenter-sidebar-button"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href="">Quickstart Guide</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="">Quickstart Guide</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/kestrelquantum/QuantumCollocation.jl" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/kestrelquantum/QuantumCollocation.jl/blob/main/docs/literate/quickstart.jl" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" href="#" id="documenter-settings-button" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" href="javascript:;" id="documenter-article-toggle-button" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="Quickstart-Guide"><a class="docs-heading-anchor" href="#Quickstart-Guide">Quickstart Guide</a><a id="Quickstart-Guide-1"></a><a class="docs-heading-anchor-permalink" href="#Quickstart-Guide" title="Permalink"></a></h1><p>To set up and solve a quantum optimal control problems we provide high level problem templates to quickly get started. For unitary gate problems, where we want to realize a gate <span>$U_{\text{goal}}$</span>, with a system Hamiltonian of the form,</p><p class="math-container">\[H(t) = H_0 + \sum_i a^i(t) H_i\]</p><p>there is the <code>UnitarySmoothPulseProblem</code> constructor which only requires</p><ul><li>the drift Hamiltonian, <span>$H_0$</span></li><li>the drive Hamiltonians, <span>$\qty{H_i}$</span></li><li>the target unitary, <span>$U_{\text{goal}}$</span></li><li>the number of timesteps, <span>$T$</span></li><li>the (initial) time step size, <span>$\Delta t$</span></li></ul><h2 id="Basic-Usage"><a class="docs-heading-anchor" href="#Basic-Usage">Basic Usage</a><a id="Basic-Usage-1"></a><a class="docs-heading-anchor-permalink" href="#Basic-Usage" title="Permalink"></a></h2><p>For example, to create a problem for a single qubit <span>$X$</span> gate (with a bound on the drive of <span>$|a^i| &lt; a_{\text{bound}}$</span>), i.e., with system hamiltonian</p><p class="math-container">\[H(t) = \frac{\omega}{2} \sigma_z + a^1(t) \sigma_x + a^2(t) \sigma_y\]</p><p>we can do the following:</p><pre><code class="language-julia hljs">using NamedTrajectories
+using QuantumCollocation
+
+# set time parameters
+T = 100
+Δt = 0.1
+
+# use the exported gate dictionary to get the gates we need
+σx = GATES[:X]
+σy = GATES[:Y]
+σz = GATES[:Z]
+
+# define drift and drive Hamiltonians
+H_drift = 0.5 * σz
+H_drives = [σx, σy]
+
+# define target unitary
+U_goal = σx
+
+# set bound on the drive
+a_bound = 1.0
+
+# build the problem
+prob = UnitarySmoothPulseProblem(
+    H_drift,
+    H_drives,
+    U_goal,
+    T,
+    Δt;
+    a_bound=a_bound,
+)
+
+# solve the problem
+solve!(prob; max_iter=30)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">    building dynamics from integrators...
+        constructing knot point dynamics functions...
+        determining dynamics derivative structure...
+            computing jacobian sparsity...
+            creating full trajectory jacobian structure...
+        constructing full dynamics derivative functions...
+    building evaluator...
+    initializing optimizer...
+applying constraint: initial value of Ũ⃗
+applying constraint: initial value of a
+applying constraint: final value of a
+applying constraint: bounds on a
+applying constraint: bounds on da
+applying constraint: bounds on dda
+applying constraint: bounds on Δt
+applying constraint: time step all equal constraint
+This is Ipopt version 3.14.16, running with linear solver MUMPS 5.7.3.
+
+Number of nonzeros in equality constraint Jacobian...:    10442
+Number of nonzeros in inequality constraint Jacobian.:        0
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+Total number of variables............................:     1488
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:      496
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:     1287
+Total number of inequality constraints...............:        0
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:        0
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  3.6930885e-03 1.90e+00 3.26e-05   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  7.6130874e+00 5.96e-01 5.02e+01  -0.2 1.00e+00    -  4.14e-02 6.86e-01h  1
+   2  8.3923840e+00 7.35e-02 4.62e+01  -1.8 2.00e+00    -  4.72e-01 1.00e+00h  1
+   3  4.4732058e+01 1.90e-02 8.81e+01  -0.4 1.58e+00    -  9.15e-01 1.00e+00f  1
+   4  1.4984024e+01 7.07e-03 4.32e+01  -0.9 5.29e-01    -  1.00e+00 1.00e+00f  1
+   5  1.2138310e+00 1.90e-03 7.74e+00  -1.8 4.36e-01    -  1.00e+00 1.00e+00f  1
+   6  7.6308918e-01 7.76e-04 8.43e+00  -2.3 3.90e-01    -  9.95e-01 1.00e+00F  1
+   7  7.5251626e-01 2.87e-04 1.00e+02  -2.0 1.30e-01    -  1.00e+00 1.00e+00f  1
+   8  1.5621019e+00 2.97e-03 6.79e+01  -1.8 7.31e-01    -  1.00e+00 5.00e-01f  2
+   9  1.4293823e+00 1.18e-03 4.73e+01  -1.9 2.34e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  1.2290043e-01 1.64e-04 6.28e+01  -1.9 8.89e-02    -  1.00e+00 1.00e+00f  1
+  11  9.1221205e+00 8.32e-05 9.31e+01  -2.0 2.92e-01    -  9.06e-01 1.00e+00H  1
+  12  3.9410375e+00 5.77e-04 7.35e+01  -3.0 1.49e-01    -  1.00e+00 1.00e+00f  1
+  13  1.5003014e+00 1.78e-03 2.22e+01  -3.1 8.25e-01    -  1.00e+00 3.13e-01f  2
+  14  5.1506159e-02 1.53e-03 7.10e+01  -3.1 4.21e-01    -  4.89e-01 2.50e-01f  3
+  15  1.1553349e+00 7.29e-04 5.01e+01  -4.0 1.43e-01    -  1.00e+00 1.00e+00h  1
+  16  5.6898764e-01 2.59e-04 5.22e+01  -4.1 1.02e-01    -  1.00e+00 1.00e+00f  1
+  17  2.7298889e-01 7.44e-04 6.55e+01  -4.1 2.47e-01    -  1.00e+00 5.00e-01f  2
+  18  2.8729719e-01 3.23e-04 4.25e+01  -4.1 1.05e-01    -  1.00e+00 1.00e+00h  1
+  19  1.1263151e-03 1.07e-04 4.50e+01  -4.1 7.53e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20  1.5576246e-01 1.25e-04 4.99e+01  -4.0 6.02e-02    -  1.00e+00 1.00e+00h  1
+  21  7.5596471e-02 1.42e-04 5.04e+01  -4.0 6.36e-02    -  1.00e+00 1.00e+00h  1
+  22  3.0435342e-02 1.49e-04 4.98e+01  -3.3 5.47e+00    -  1.00e+00 6.96e-03f  4
+  23  2.3011578e-02 6.09e-05 5.01e+01  -3.6 4.14e-02    -  1.00e+00 1.00e+00h  1
+  24  3.7715564e-03 2.00e-05 4.97e+01  -4.0 2.53e-02    -  1.00e+00 1.00e+00h  1
+  25  3.8023939e-03 1.45e-05 5.08e+01  -4.0 3.68e-02    -  1.00e+00 5.00e-01h  2
+  26  9.4787189e-04 7.52e-06 4.71e+01  -4.0 1.64e-02    -  1.00e+00 1.00e+00h  1
+  27  8.3118063e-04 6.83e-06 5.27e+01  -4.0 3.45e-02    -  1.00e+00 2.50e-01h  3
+  28  8.0130739e-04 2.36e-06 4.95e+01  -4.0 9.41e-03    -  1.00e+00 1.00e+00h  1
+  29  8.0835164e-04 1.20e-05 4.83e+01  -4.0 1.79e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  30  6.8342816e-04 1.83e-03 5.20e+01  -4.1 2.19e-01    -  1.00e+00 1.00e+00h  1
+
+Number of Iterations....: 30
+
+                                   (scaled)                 (unscaled)
+Objective...............:   6.8342815961344261e-04    6.8342815961344261e-04
+Dual infeasibility......:   5.1956483786740577e+01    5.1956483786740577e+01
+Constraint violation....:   1.8349309552144972e-03    1.8349309552144972e-03
+Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
+Complementarity.........:   8.0985525081870614e-05    8.0985525081870614e-05
+Overall NLP error.......:   5.1956483786740577e+01    5.1956483786740577e+01
+
+
+Number of objective function evaluations             = 59
+Number of objective gradient evaluations             = 31
+Number of equality constraint evaluations            = 59
+Number of inequality constraint evaluations          = 0
+Number of equality constraint Jacobian evaluations   = 31
+Number of inequality constraint Jacobian evaluations = 0
+Number of Lagrangian Hessian evaluations             = 0
+Total seconds in IPOPT                               = 0.560
+
+EXIT: Maximum Number of Iterations Exceeded.</code></pre><p>The above output comes from the Ipopt.jl solver. To see the final fidelity we can use the <code>unitary_fidelity</code> function exported by QuantumCollocation.jl.</p><pre><code class="language-julia hljs">println("Final fidelity: ", unitary_fidelity(prob))</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">Final fidelity: 0.9963774542818296</code></pre><p>We can also easily plot the solutions using the <code>plot</code> function exported by NamedTrajectories.jl.</p><pre><code class="language-julia hljs">plot(prob.trajectory, [:Ũ⃗, :a])</code></pre><img alt="Example block output" src="a4f49ef4.png"/><h2 id="Minimum-Time-Problems"><a class="docs-heading-anchor" href="#Minimum-Time-Problems">Minimum Time Problems</a><a id="Minimum-Time-Problems-1"></a><a class="docs-heading-anchor-permalink" href="#Minimum-Time-Problems" title="Permalink"></a></h2><p>We can also easily set up and solve a minimum time problem, where we enforce a constraint on the final fidelity:</p><p class="math-container">\[\mathcal{F}(U_T, U_{\text{goal}}) \geq \mathcal{F}_{\text{min}}\]</p><p>Using the problem we just solved we can do the following:</p><pre><code class="language-julia hljs"># final fidelity constraint
+final_fidelity = 0.99
+
+# weight on the minimum time objective
+D = 10.0
+
+prob_min_time = UnitaryMinimumTimeProblem(
+    prob;
+    final_fidelity=final_fidelity,
+    D=D
+)
+
+solve!(prob_min_time; max_iter=30)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">    building dynamics from integrators...
+        constructing knot point dynamics functions...
+        determining dynamics derivative structure...
+            computing jacobian sparsity...
+            creating full trajectory jacobian structure...
+        constructing full dynamics derivative functions...
+    building evaluator...
+    initializing optimizer...
+applying constraint: initial value of Ũ⃗
+applying constraint: initial value of a
+applying constraint: final value of a
+applying constraint: bounds on a
+applying constraint: bounds on da
+applying constraint: bounds on dda
+applying constraint: bounds on Δt
+applying constraint: time step all equal constraint
+This is Ipopt version 3.14.16, running with linear solver MUMPS 5.7.3.
+
+Number of nonzeros in equality constraint Jacobian...:    10442
+Number of nonzeros in inequality constraint Jacobian.:        4
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+Total number of variables............................:     1488
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:      496
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:     1287
+Total number of inequality constraints...............:        1
+        inequality constraints with only lower bounds:        1
+   inequality constraints with lower and upper bounds:        0
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  7.1465086e+01 1.83e-03 3.27e-01   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  6.3409217e+01 1.86e-03 1.00e+02  -1.2 2.54e-01    -  9.63e-01 1.00e+00f  1
+   2  6.0564375e+01 1.75e-03 2.73e+01  -1.8 3.89e-01    -  1.00e+00 1.43e-01f  1
+   3  6.2045805e+01 2.19e-04 1.74e+01  -2.0 1.26e-01    -  1.00e+00 1.00e+00h  1
+   4  6.7992038e+01 1.18e-03 2.63e+01  -0.8 1.91e-01    -  9.03e-01 1.00e+00f  1
+   5  6.6960796e+01 8.55e-04 7.97e+01  -0.9 4.82e-01    -  1.00e+00 2.50e-01f  3
+   6  6.2746138e+01 3.41e-04 3.34e+01  -0.9 9.37e-02    -  1.00e+00 1.00e+00f  1
+   7  6.2709283e+01 2.73e-05 1.47e+01  -0.9 4.97e-02    -  1.00e+00 1.00e+00h  1
+   8  5.4975086e+01 1.23e-03 1.03e+02  -1.4 1.68e-01    -  9.93e-01 1.00e+00f  1
+   9  5.0806755e+01 7.63e-04 6.02e+01  -2.4 1.71e-01    -  1.00e+00 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  5.0442257e+01 1.35e-04 5.21e+01  -2.5 8.55e-02    -  1.00e+00 1.00e+00f  1
+  11  5.0355897e+01 1.02e-04 5.34e+01  -2.8 1.65e-01    -  1.00e+00 5.00e-01f  2
+  12  5.0018706e+01 2.87e-05 1.37e+01  -4.0 3.67e-02    -  1.00e+00 1.00e+00f  1
+  13  5.0042388e+01 1.95e-05 9.36e+01  -4.0 2.71e-02    -  1.00e+00 1.00e+00h  1
+  14  5.0013945e+01 1.59e-06 4.84e+01  -4.0 1.06e-02    -  1.00e+00 1.00e+00h  1
+  15  5.0013199e+01 1.29e-06 7.64e+01  -4.0 7.38e-03    -  1.00e+00 1.00e+00h  1
+  16  5.0011471e+01 6.76e-08 5.77e+01  -4.0 2.21e-03    -  1.00e+00 1.00e+00h  1
+  17  5.0011188e+01 3.37e-07 6.31e+01  -4.0 9.29e-03    -  1.00e+00 1.00e+00h  1
+  18  5.0010933e+01 7.05e-08 4.76e+01  -4.0 2.98e-03    -  1.00e+00 1.00e+00h  1
+  19  5.0010822e+01 1.30e-07 4.81e+01  -4.0 1.83e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20  5.0010810e+01 9.79e-08 4.78e+01  -4.0 1.57e-03    -  1.00e+00 1.00e+00h  1
+  21  5.0010752e+01 4.89e-08 5.22e+01  -4.0 1.31e-03    -  1.00e+00 1.00e+00h  1
+  22  5.0010766e+01 1.11e-08 4.62e+01  -4.0 8.90e-04    -  1.00e+00 1.00e+00h  1
+  23  5.0008748e+01 1.61e-08 4.72e+01  -4.1 1.16e-03    -  1.00e+00 1.00e+00h  1
+  24  5.0009902e+01 4.77e-07 5.06e+01  -4.0 2.62e-02    -  1.00e+00 5.00e-01h  2
+  25  5.0008724e+01 1.51e-07 5.06e+01  -4.1 8.44e-03    -  1.00e+00 1.00e+00h  1
+  26  5.0008766e+01 1.90e-07 4.95e+01  -4.0 2.50e-01    -  1.00e+00 3.12e-02h  6
+  27  5.0008550e+01 2.68e-07 5.03e+01  -4.1 3.48e-03    -  1.00e+00 1.00e+00h  1
+  28  5.0010764e+01 7.34e-07 4.88e+01  -4.0 4.76e-03    -  1.00e+00 1.00e+00h  1
+  29  5.0008785e+01 1.15e-05 4.95e+01  -4.1 7.95e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  30  5.0008780e+01 1.12e-05 5.06e+01  -4.1 2.41e-01    -  1.00e+00 1.25e-01h  4
+
+Number of Iterations....: 30
+
+                                   (scaled)                 (unscaled)
+Objective...............:   5.0008779994777683e+01    5.0008779994777683e+01
+Dual infeasibility......:   5.0578162578284328e+01    5.0578162578284328e+01
+Constraint violation....:   1.1200338289385492e-05    1.1200338289385492e-05
+Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
+Complementarity.........:   1.0563950389140580e-04    1.0563950389140580e-04
+Overall NLP error.......:   5.0578162578284328e+01    5.0578162578284328e+01
+
+
+Number of objective function evaluations             = 49
+Number of objective gradient evaluations             = 31
+Number of equality constraint evaluations            = 49
+Number of inequality constraint evaluations          = 49
+Number of equality constraint Jacobian evaluations   = 31
+Number of inequality constraint Jacobian evaluations = 31
+Number of Lagrangian Hessian evaluations             = 0
+Total seconds in IPOPT                               = 2.058
+
+EXIT: Maximum Number of Iterations Exceeded.</code></pre><p>We can see that the final fidelity is indeed greater than the minimum fidelity we set.</p><pre><code class="language-julia hljs">println("Final fidelity:    ", unitary_fidelity(prob_min_time))</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">Final fidelity:    0.9999082472405921</code></pre><p>and that the duration of the pulse has decreased.</p><pre><code class="language-julia hljs">initial_dur = get_times(prob.trajectory)[end]
+min_time_dur = get_times(prob_min_time.trajectory)[end]
+
+println("Initial duration:  ", initial_dur)
+println("Minimum duration:  ", min_time_dur)
+println("Duration decrease: ", initial_dur - min_time_dur)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">Initial duration:  7.074975863781843
+Minimum duration:  4.9507912061491055
+Duration decrease: 2.1241846576327372</code></pre><p>We can also plot the solutions for the minimum time problem.</p><pre><code class="language-julia hljs">plot(prob_min_time.trajectory, [:Ũ⃗, :a])</code></pre><img alt="Example block output" src="40b014a0.png"/><hr/><p><em>This page was generated using <a href="https://github.com/fredrikekre/Literate.jl">Literate.jl</a>.</em></p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../../">« Home</a><a class="docs-footer-nextpage" href="../../contribution_guide/">Contribution Guide »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label></p><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div><p></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.7.0 on <span class="colophon-date" title="Tuesday 12 November 2024 16:27">Tuesday 12 November 2024</span>. Using Julia version 1.11.1.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></HTML>

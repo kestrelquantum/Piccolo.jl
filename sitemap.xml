@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/man/add_remove/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/man/constructors/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/man/copy_equality/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/man/operations/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/man/params_in_struct/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/man/retrieval/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/man/times/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/man/updating/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/manual/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/plotting/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/generated/quickstart/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/lib/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/man/add_remove/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/man/constructors/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/man/operations/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/man/retrieval/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/man/times/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/man/updating/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/manual/</loc></url>
+<url><loc>https://kestrelquantum.github.io/NamedTrajectories/stable/search/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/contribution_guide/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/generated/examples/multilevel_transmon/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/generated/examples/two_qubit_gates/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/generated/man/embedded_operators/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/generated/man/ipopt_callbacks/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/generated/man/problem_templates/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/generated/quickstart/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/lib/</loc></url>
+<url><loc>https://kestrelquantum.github.io/QuantumCollocation/dev/release_notes/</loc></url>
+<url><loc>https://kestrelquantum.github.io/TrajectoryIndexingUtils/dev/</loc></url>
+<url><loc>https://kestrelquantum.github.io/TrajectoryIndexingUtils/dev/search/</loc></url>
+</urlset>
