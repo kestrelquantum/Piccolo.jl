@@ -1,5 +1,9 @@
 # Piccolo.jl
 
+<p align="center">
+<img src="assets/piccolo_logo.svg" alt="logo" width="50%"/>
+</p>
+
 ![piccolo](assets/piccolo_logo.svg)
   
 | **Documentation** | **Build Status** | **Support** | **License** |
