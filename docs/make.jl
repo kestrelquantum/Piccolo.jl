@@ -36,11 +36,7 @@ end
 Documenter.makedocs(
     sitename = "Piccolo",
     modules = [Piccolo],
-    warnonly = true,
-    pages = [
-        "Home" => "index.md"
-        "Examples" => ["example" => "examples/example.md"]
-    ],
+    warnonly = true
 )
 
 @info "Building aggregate MultiDocumenter site"

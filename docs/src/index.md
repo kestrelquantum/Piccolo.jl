@@ -1,6 +1,6 @@
 # Piccolo.jl
 
-![piccolo](assets/piccolo_logo_light_text.png)
+![piccolo](media/piccolo_logo_small_no_name.png)
   
 | **Documentation** | **Build Status** | **Support** | **License** |
 |:-----------------:|:----------------:|:-----------:|:---------:|
@@ -12,8 +12,8 @@ Piccolo.jl is a meta-package for quantum optimal control using the Pade Integrat
 - [QuantumCollocation.jl](https://github.com/kestrelquantum/QuantumCollocation.jl)
 - [NamedTrajectories.jl](https://github.com/kestrelquantum/NamedTrajectories.jl)
 - [TrajectoryIndexingUtils.jl](https://github.com/kestrelquantum/TrajectoryIndexingUtils.jl)
-- [PiccoloQuantumObjects.jl](https:/github.com/kestrelquantum/PiccoloQuantumObjects.jl)
-- [PiccoloPlots.jl](https:/github.com/kestrelquantum/PiccoloPlots.jl)
+- [PiccoloQuantumObjects.jl](https://github.com/kestrelquantum/PiccoloQuantumObjects.jl)
+- [PiccoloPlots.jl](https://github.com/kestrelquantum/PiccoloPlots.jl)
 
 For documentation please see the individual packages.
 
