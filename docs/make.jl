@@ -33,11 +33,7 @@ Modules = [Piccolo]
     )
 end
 
-Documenter.makedocs(
-    sitename = "Piccolo",
-    modules = [Piccolo],
-    warnonly = true
-)
+Documenter.makedocs(sitename = "Piccolo", modules = [Piccolo], warnonly = true)
 
 @info "Building aggregate MultiDocumenter site"
 docs = [
