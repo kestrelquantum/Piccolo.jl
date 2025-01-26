@@ -63,7 +63,30 @@ docs = [
         # giturl = "git@github.com:JuliaComputing/DataSets.jl.git",
     ),
     MultiDocumenter.DropdownNav(
-        "Utilities",
+        "Quantum Utilities",
+        [
+            MultiDocumenter.MultiDocRef(
+                upstream = joinpath(clonedir, "PiccoloQuantumObjects"),
+                path = "PiccoloQuantumObjects",
+                name = "PiccoloQuantumObjects.jl",
+                giturl = "https://github.com/kestrelquantum/PiccoloQuantumObjects.jl.git",
+            ),
+            MultiDocumenter.MultiDocRef(
+                upstream = joinpath(clonedir, "PiccoloPlots"),
+                path = "PiccoloPlots",
+                name = "PiccoloPlots.jl",
+                giturl = "https://github.com/kestrelquantum/PiccoloPlots.jl.git",
+            ),
+            MultiDocumenter.MultiDocRef(
+                upstream = joinpath(clonedir, "QuantumCollocationCore"),
+                path = "QuantumCollocationCore",
+                name = "QuantumCollocationCore.jl",
+                giturl = "https://github.com/kestrelquantum/QuantumCollocationCore.jl.git",
+            ),
+        ],
+    ),
+    MultiDocumenter.DropdownNav(
+        "Trajectory Utilities",
         [
             MultiDocumenter.MultiDocRef(
                 upstream = joinpath(clonedir, "NamedTrajectories"),
