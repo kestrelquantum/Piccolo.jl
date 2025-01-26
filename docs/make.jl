@@ -39,9 +39,7 @@ Documenter.makedocs(
     warnonly = true,
     pages = [
         "Home" => "index.md"
-        "Examples" => [
-            "example" => "examples/example.md"
-        ]
+        "Examples" => ["example" => "examples/example.md"]
     ],
 )
 
