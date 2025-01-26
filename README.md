@@ -1,6 +1,6 @@
 # Piccolo.jl
 
-![piccolo](assets/piccolo_logo_light_text.png)
+![piccolo](../assets/piccolo_logo_light_text.png)
   
 | **Documentation** | **Build Status** | **Support** | **License** |
 |:-----------------:|:----------------:|:-----------:|:---------:|
