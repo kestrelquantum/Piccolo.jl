@@ -15,7 +15,14 @@ push!(LOAD_PATH, joinpath(@__DIR__, "..", "src"))
 
 @info "Building Documenter site for Piccolo.jl"
 open(joinpath(@__DIR__, "src", "index.md"), write = true) do io
-    write(io, read(joinpath(@__DIR__, "..", "README.md")))
+    for line in eachline(joinpath(@__DIR__, "..", "README.md"))
+        if occursin("<!--", line) && occursin("-->", line)
+            comment_content = match(r"<!--(.*)-->", line).captures[1]
+            write(io, comment_content * "\n")
+        else
+            write(io, line * "\n")
+        end
+    end
 end
 
 pages = [
@@ -68,8 +75,8 @@ makedocs(;
     warnonly = true
 )
 
-MultiDocumenter
----------------
+# MultiDocumenter
+# ---------------
 
 clonedir = ("--temp" in ARGS) ? mktempdir() : joinpath(@__DIR__, "clones")
 outpath = mktempdir()
@@ -89,7 +96,7 @@ docs = [
     ),
     MultiDocumenter.MultiDocRef(
         upstream = joinpath(clonedir, "PiccoloQuantumObjects"),
-        path = "PiccoloQuantumObjects",
+        path = "Quantum Objects",
         name = "PiccoloQuantumObjects.jl",
         giturl = "https://github.com/kestrelquantum/PiccoloQuantumObjects.jl.git",
     ),
@@ -131,7 +138,7 @@ docs = [
     ),
     MultiDocumenter.MultiDocRef(
         upstream = joinpath(clonedir, "PiccoloPlots"),
-        path = "PiccoloPlots",
+        path = "Plotting",
         name = "PiccoloPlots.jl",
         giturl = "https://github.com/kestrelquantum/PiccoloPlots.jl.git",
     ),

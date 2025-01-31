@@ -30,4 +30,4 @@ This package is registered! To install enter the Julia REPL, type `]` to enter p
 pkg> add Piccolo
 ```
 
-> *"Technologies are ways of commandeering nature: the sky belongs to those who know how to fly; the sea belongs to those who know how to swim and navigate." &ndash; Simone de Beauvoir*
+> *"Technologies are ways of commandeering nature: the sky belongs to those who know how to fly; the sea belongs to those who know how to swim and navigate." – Simone de Beauvoir*
