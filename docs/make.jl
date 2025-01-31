@@ -6,9 +6,70 @@
 # and attempts to push the generated site to gh-pages. You can also pass
 # `--temp`, in which case the source repositories are cloned into a temporary
 # directory (as opposed to `docs/clones`).
-using MultiDocumenter
 using Piccolo
-import Documenter
+using MultiDocumenter
+using Documenter
+using Literate
+
+push!(LOAD_PATH, joinpath(@__DIR__, "..", "src"))
+
+@info "Building Documenter site for Piccolo.jl"
+open(joinpath(@__DIR__, "src", "index.md"), write = true) do io
+    write(io, read(joinpath(@__DIR__, "..", "README.md")))
+end
+
+pages = [
+    "Home" => "index.md",
+    "Quickstart" => "generated/quickstart.md",
+    "Examples" => [
+        "generated/multilevel_transmon.md",
+    ],
+    "Contribution Guide" => "contribution_guide.md",
+    "Release Notes" => "release_notes.md",
+]
+
+format = Documenter.HTML(;
+    prettyurls=get(ENV, "CI", "false") == "true",
+    canonical="https://kestrelquantum.github.io/",
+    edit_link="main",
+    assets=String[],
+    mathengine = MathJax3(Dict(
+        :loader => Dict("load" => ["[tex]/physics"]),
+        :tex => Dict(
+            "inlineMath" => [["\$","\$"], ["\\(","\\)"]],
+            "tags" => "ams",
+            "packages" => [
+                "base",
+                "ams",
+                "autoload",
+                "physics"
+            ],
+        ),
+    )),
+)
+
+src = joinpath(@__DIR__, "src")
+lit = joinpath(@__DIR__, "literate")
+
+lit_output = joinpath(src, "generated")
+
+for (root, _, files) ∈ walkdir(lit), file ∈ files
+    splitext(file)[2] == ".jl" || continue
+    ipath = joinpath(root, file)
+    opath = splitdir(replace(ipath, lit=>lit_output))[1]
+    Literate.markdown(ipath, opath)
+end
+
+makedocs(;
+    modules = [Piccolo],
+    sitename = "Piccolo.jl",
+    format = format,
+    pages = pages,
+    warnonly = true
+)
+
+MultiDocumenter
+---------------
 
 clonedir = ("--temp" in ARGS) ? mktempdir() : joinpath(@__DIR__, "clones")
 outpath = mktempdir()
@@ -16,24 +77,6 @@ outpath = mktempdir()
 Cloning packages into: $(clonedir)
 Building aggregate site into: $(outpath)
 """
-
-@info "Building Documenter site for Piccolo.jl"
-open(joinpath(@__DIR__, "src", "index.md"), write = true) do io
-    write(io, read(joinpath(@__DIR__, "..", "README.md")))
-    write(
-        io,
-        """
-
-## Docstrings
-
-```@autodocs
-Modules = [Piccolo]
-```
-""",
-    )
-end
-
-Documenter.makedocs(sitename = "Piccolo", modules = [Piccolo], warnonly = true)
 
 @info "Building aggregate MultiDocumenter site"
 docs = [
@@ -45,27 +88,21 @@ docs = [
         fix_canonical_url = false,
     ),
     MultiDocumenter.MultiDocRef(
-        upstream = joinpath(clonedir, "QuantumCollocation"),
-        path = "QuantumCollocation",
-        name = "QuantumCollocation.jl",
-        giturl = "https://github.com/kestrelquantum/QuantumCollocation.jl.git",
-        # or use ssh instead for private repos:
-        # giturl = "git@github.com:JuliaComputing/DataSets.jl.git",
+        upstream = joinpath(clonedir, "PiccoloQuantumObjects"),
+        path = "PiccoloQuantumObjects",
+        name = "PiccoloQuantumObjects.jl",
+        giturl = "https://github.com/kestrelquantum/PiccoloQuantumObjects.jl.git",
     ),
     MultiDocumenter.DropdownNav(
-        "Quantum Utilities",
+        "Optimal Controls",
         [
             MultiDocumenter.MultiDocRef(
-                upstream = joinpath(clonedir, "PiccoloQuantumObjects"),
-                path = "PiccoloQuantumObjects",
-                name = "PiccoloQuantumObjects.jl",
-                giturl = "https://github.com/kestrelquantum/PiccoloQuantumObjects.jl.git",
-            ),
-            MultiDocumenter.MultiDocRef(
-                upstream = joinpath(clonedir, "PiccoloPlots"),
-                path = "PiccoloPlots",
-                name = "PiccoloPlots.jl",
-                giturl = "https://github.com/kestrelquantum/PiccoloPlots.jl.git",
+                upstream = joinpath(clonedir, "QuantumCollocation"),
+                path = "QuantumCollocation",
+                name = "QuantumCollocation.jl",
+                giturl = "https://github.com/kestrelquantum/QuantumCollocation.jl.git",
+                # or use ssh instead for private repos:
+                # giturl = "git@github.com:JuliaComputing/DataSets.jl.git",
             ),
             MultiDocumenter.MultiDocRef(
                 upstream = joinpath(clonedir, "QuantumCollocationCore"),
@@ -76,7 +113,7 @@ docs = [
         ],
     ),
     MultiDocumenter.DropdownNav(
-        "Trajectory Utilities",
+        "Trajectories",
         [
             MultiDocumenter.MultiDocRef(
                 upstream = joinpath(clonedir, "NamedTrajectories"),
@@ -91,6 +128,12 @@ docs = [
                 giturl = "https://github.com/kestrelquantum/TrajectoryIndexingUtils.jl.git",
             ),
         ],
+    ),
+    MultiDocumenter.MultiDocRef(
+        upstream = joinpath(clonedir, "PiccoloPlots"),
+        path = "PiccoloPlots",
+        name = "PiccoloPlots.jl",
+        giturl = "https://github.com/kestrelquantum/PiccoloPlots.jl.git",
     ),
 ]
 
