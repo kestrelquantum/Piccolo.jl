@@ -5,7 +5,7 @@
   <img src="assets/piccolo_logo.svg" alt="Piccolo.jl" width="25%"/>
 </a> 
 
-<div style="display: table; width: 60%;">
+<div style="display: table; width: 100%;">
   <div style="display: table-row;">
     <div style="display: table-cell; text-align: center;"><b>Documentation</b></div>
     <div style="display: table-cell; text-align: center;"><b>Build Status</b></div>
