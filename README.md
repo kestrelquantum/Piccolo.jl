@@ -6,7 +6,7 @@
 </a> 
 
 <div style="display: table; width: 100%;">
-  <div style="display: table-row;">
+  <span style="display: table-row;">
     <span style="display: table-cell; text-align: center;">
       <b>Documentation</b>
       <br>
@@ -41,7 +41,7 @@
         <img src="https://img.shields.io/badge/Supported%20By-Unitary%20Fund-FFFF00.svg" alt="Unitary Fund"/>
       </a>
     </span>
-  </div>
+  </span>
 </div>
 
 </div>
