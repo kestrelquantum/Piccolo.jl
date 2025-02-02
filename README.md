@@ -5,42 +5,42 @@
   <img src="assets/piccolo_logo.svg" alt="Piccolo.jl" width="25%"/>
 </a> 
 
-<div style="display: table; width: 100%;">
-  <div style="display: table-row;">
-    <div style="display: table-cell; text-align: center;"><b>Documentation</b></div>
-    <div style="display: table-cell; text-align: center;"><b>Build Status</b></div>
-    <div style="display: table-cell; text-align: center;"><b>License</b></div>
-    <div style="display: table-cell; text-align: center;"><b>Support</b></div>
-  </div>
-  <div style="display: table-row;">
-    <div style="display: table-cell; text-align: center;">
+<span style="display: table; width: 100%;">
+  <span style="display: table-row;">
+    <span style="display: table-cell; text-align: center;"><b>Documentation</b></span>
+    <span style="display: table-cell; text-align: center;"><b>Build Status</b></span>
+    <span style="display: table-cell; text-align: center;"><b>License</b></span>
+    <span style="display: table-cell; text-align: center;"><b>Support</b></span>
+  </span>
+  <span style="display: table-row;">
+    <span style="display: table-cell; text-align: center;">
       <a href="https://kestrelquantum.github.io/Piccolo.jl/stable/">
         <img src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable"/>
       </a>
       <a href="https://kestrelquantum.github.io/Piccolo.jl/dev/">
         <img src="https://img.shields.io/badge/docs-dev-blue.svg" alt="Dev"/>
       </a>
-    </div>
-    <div style="display: table-cell; text-align: center;">
+    </span>
+    <span style="display: table-cell; text-align: center;">
       <a href="https://github.com/kestrelquantum/Piccolo.jl/actions/workflows/CI.yml?query=branch%3Amain">
         <img src="https://github.com/kestrelquantum/Piccolo.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status"/>
       </a>
       <a href="https://codecov.io/gh/kestrelquantum/Piccolo.jl">
         <img src="https://codecov.io/gh/kestrelquantum/Piccolo.jl/branch/main/graph/badge.svg" alt="Coverage"/>
       </a>
-    </div>
-    <div style="display: table-cell; text-align: center;">
+    </span>
+    <span style="display: table-cell; text-align: center;">
       <a href="https://opensource.org/licenses/MIT">
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"/>
       </a>
-    </div>
-    <div style="display: table-cell; text-align: center;">
+    </span>
+    <span style="display: table-cell; text-align: center;">
       <a href="https://unitary.fund">
         <img src="https://img.shields.io/badge/Supported%20By-Unitary%20Fund-FFFF00.svg" alt="Unitary Fund"/>
       </a>
-    </div>
-  </div>
-</div>
+    </span>
+  </span>
+</span>
 
 </div>
 <!--```-->
