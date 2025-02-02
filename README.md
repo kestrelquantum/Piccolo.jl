@@ -5,14 +5,14 @@
   <img src="assets/piccolo_logo.svg" alt="Piccolo.jl" width="25%"/>
 </a> 
 
-<span style="display: table; width: 100%;">
-  <span style="display: table-row;">
+<div style="display: table; width: 100%;">
+  <div style="display: table-row;">
     <span style="display: table-cell; text-align: center;"><b>Documentation</b></span>
     <span style="display: table-cell; text-align: center;"><b>Build Status</b></span>
     <span style="display: table-cell; text-align: center;"><b>License</b></span>
     <span style="display: table-cell; text-align: center;"><b>Support</b></span>
-  </span>
-  <span style="display: table-row;">
+  </div>
+  <div style="display: table-row;">
     <span style="display: table-cell; text-align: center;">
       <a href="https://kestrelquantum.github.io/Piccolo.jl/stable/">
         <img src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable"/>
@@ -39,8 +39,8 @@
         <img src="https://img.shields.io/badge/Supported%20By-Unitary%20Fund-FFFF00.svg" alt="Unitary Fund"/>
       </a>
     </span>
-  </span>
-</span>
+  </div>
+</div>
 
 </div>
 <!--```-->
