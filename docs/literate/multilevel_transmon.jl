@@ -25,7 +25,8 @@
 
 using Piccolo
 using SparseArrays
-using Random; Random.seed!(123)
+using Random;
+Random.seed!(123);
 
 ## define the time parameters
 
@@ -42,7 +43,7 @@ a_bound = 0.2
 dda_bound = 1.0
 
 ## create the system
-sys = TransmonSystem(levels=levels, δ=δ)
+sys = TransmonSystem(levels = levels, δ = δ)
 
 ## let's look at the parameters of the system
 sys.params
@@ -59,14 +60,17 @@ op.operator |> sparse
 # We can then pass this embedded operator to the `UnitarySmoothPulseProblem` template to create
 
 ## create the problem
-prob = UnitarySmoothPulseProblem(sys, op, T, Δt; a_bound=a_bound, dda_bound=dda_bound)
+prob = UnitarySmoothPulseProblem(sys, op, T, Δt; a_bound = a_bound, dda_bound = dda_bound)
 
 ## solve the problem
-solve!(prob; max_iter=50)
+solve!(prob; max_iter = 50)
 
 # Let's look at the fidelity in the subspace
 
-println("Fidelity: ", unitary_rollout_fidelity(prob.trajectory, sys; subspace=op.subspace))
+println(
+    "Fidelity: ",
+    unitary_rollout_fidelity(prob.trajectory, sys; subspace = op.subspace),
+)
 
 # and plot the result using the `plot_unitary_populations` function.
 
@@ -78,21 +82,28 @@ plot_unitary_populations(prob.trajectory)
 
 ## create the a leakage suppression problem, initializing with the previous solution
 
-prob_leakage = UnitarySmoothPulseProblem(sys, op, T, Δt;
-    a_bound=a_bound,
-    dda_bound=dda_bound,
-    leakage_suppression=true,
-    R_leakage=1e-1,
-    a_guess=prob.trajectory.a
+prob_leakage = UnitarySmoothPulseProblem(
+    sys,
+    op,
+    T,
+    Δt;
+    a_bound = a_bound,
+    dda_bound = dda_bound,
+    leakage_suppression = true,
+    R_leakage = 1e-1,
+    a_guess = prob.trajectory.a,
 )
 
 ## solve the problem
 
-solve!(prob_leakage; max_iter=50)
+solve!(prob_leakage; max_iter = 50)
 
 # Let's look at the fidelity in the subspace
 
-println("Fidelity: ", unitary_rollout_fidelity(prob_leakage.trajectory, sys; subspace=op.subspace))
+println(
+    "Fidelity: ",
+    unitary_rollout_fidelity(prob_leakage.trajectory, sys; subspace = op.subspace),
+)
 
 # and plot the result using the `plot_unitary_populations` function from PiccoloPlots.jl
 

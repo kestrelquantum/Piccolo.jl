@@ -1,4 +1,4 @@
-pretty_print(X::AbstractMatrix) = Base.show(stdout,"text/plain", X); # Helper function
+pretty_print(X::AbstractMatrix) = Base.show(stdout, "text/plain", X); # Helper function
 
 #=
 
@@ -51,12 +51,12 @@ prob = UnitarySmoothPulseProblem(
     U_goal,
     T,
     Δt;
-    a_bound=a_bound,
-    dda_bound=dda_bound,
+    a_bound = a_bound,
+    dda_bound = dda_bound,
 )
 
 ## solve the problem
-solve!(prob; max_iter=50)
+solve!(prob; max_iter = 50)
 
 #=
 The above output comes from the Ipopt.jl solver. The problem's trajectory has been updated with the solution. 
@@ -88,13 +88,9 @@ plot(prob.trajectory, [:Ũ⃗, :a])
 ## final fidelity constraint
 final_fidelity = 0.99
 
-min_time_prob = UnitaryMinimumTimeProblem(
-    prob,
-    system;
-    final_fidelity=final_fidelity,
-)
+min_time_prob = UnitaryMinimumTimeProblem(prob, system; final_fidelity = final_fidelity)
 
-solve!(min_time_prob; max_iter=50)
+solve!(min_time_prob; max_iter = 50)
 
 # We can see that the final fidelity is indeed greater than the minimum fidelity we set.
 

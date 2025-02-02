@@ -28,31 +28,26 @@ end
 pages = [
     "Home" => "index.md",
     "Quickstart" => "generated/quickstart.md",
-    "Examples" => [
-        "generated/multilevel_transmon.md",
-    ],
+    "Examples" => ["generated/multilevel_transmon.md"],
     "Contribution Guide" => "contribution_guide.md",
     "Release Notes" => "release_notes.md",
 ]
 
 format = Documenter.HTML(;
-    prettyurls=get(ENV, "CI", "false") == "true",
-    canonical="https://kestrelquantum.github.io/",
-    edit_link="main",
-    assets=String[],
-    mathengine = MathJax3(Dict(
-        :loader => Dict("load" => ["[tex]/physics"]),
-        :tex => Dict(
-            "inlineMath" => [["\$","\$"], ["\\(","\\)"]],
-            "tags" => "ams",
-            "packages" => [
-                "base",
-                "ams",
-                "autoload",
-                "physics"
-            ],
+    prettyurls = get(ENV, "CI", "false") == "true",
+    canonical = "https://kestrelquantum.github.io/",
+    edit_link = "main",
+    assets = String[],
+    mathengine = MathJax3(
+        Dict(
+            :loader => Dict("load" => ["[tex]/physics"]),
+            :tex => Dict(
+                "inlineMath" => [["\$", "\$"], ["\\(", "\\)"]],
+                "tags" => "ams",
+                "packages" => ["base", "ams", "autoload", "physics"],
+            ),
         ),
-    )),
+    ),
 )
 
 src = joinpath(@__DIR__, "src")
@@ -63,7 +58,7 @@ lit_output = joinpath(src, "generated")
 for (root, _, files) ∈ walkdir(lit), file ∈ files
     splitext(file)[2] == ".jl" || continue
     ipath = joinpath(root, file)
-    opath = splitdir(replace(ipath, lit=>lit_output))[1]
+    opath = splitdir(replace(ipath, lit => lit_output))[1]
     Literate.markdown(ipath, opath)
 end
 
@@ -72,7 +67,7 @@ makedocs(;
     sitename = "Piccolo.jl",
     format = format,
     pages = pages,
-    warnonly = true
+    warnonly = true,
 )
 
 # MultiDocumenter
