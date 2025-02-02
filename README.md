@@ -7,13 +7,9 @@
 
 <div style="display: table; width: 100%;">
   <div style="display: table-row;">
-    <span style="display: table-cell; text-align: center;"><b>Documentation</b></span>
-    <span style="display: table-cell; text-align: center;"><b>Build Status</b></span>
-    <span style="display: table-cell; text-align: center;"><b>License</b></span>
-    <span style="display: table-cell; text-align: center;"><b>Support</b></span>
-  </div>
-  <div style="display: table-row;">
     <span style="display: table-cell; text-align: center;">
+      <b>Documentation</b>
+      <br>
       <a href="https://kestrelquantum.github.io/Piccolo.jl/stable/">
         <img src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable"/>
       </a>
@@ -22,6 +18,8 @@
       </a>
     </span>
     <span style="display: table-cell; text-align: center;">
+      <b>Build Status</b>
+      <br>
       <a href="https://github.com/kestrelquantum/Piccolo.jl/actions/workflows/CI.yml?query=branch%3Amain">
         <img src="https://github.com/kestrelquantum/Piccolo.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status"/>
       </a>
@@ -30,11 +28,15 @@
       </a>
     </span>
     <span style="display: table-cell; text-align: center;">
+      <b>License</b>
+      <br>
       <a href="https://opensource.org/licenses/MIT">
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"/>
       </a>
     </span>
     <span style="display: table-cell; text-align: center;">
+      <b>Support</b>
+      <br>
       <a href="https://unitary.fund">
         <img src="https://img.shields.io/badge/Supported%20By-Unitary%20Fund-FFFF00.svg" alt="Unitary Fund"/>
       </a>
