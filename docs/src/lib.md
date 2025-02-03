@@ -1,0 +1,5 @@
+## Library
+
+```@autodocs
+Modules = [Piccolo]
+```
