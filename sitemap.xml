@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/man/add_remove/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/man/constructors/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/man/copy_equality/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/man/operations/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/man/params_in_struct/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/man/retrieval/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/man/times/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/man/updating/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/manual/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/plotting/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/generated/quickstart/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/lib/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/man/add_remove/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/man/constructors/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/man/operations/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/man/retrieval/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/man/times/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/man/updating/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/manual/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/NamedTrajectories/stable/search/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/Plotting/dev/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/Plotting/dev/generated/quickstart/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/Plotting/dev/lib/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/Quantum Objects/stable/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/Quantum Objects/stable/generated/isomorphisms/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/Quantum Objects/stable/generated/quantum_objects/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/Quantum Objects/stable/generated/quantum_systems/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/Quantum Objects/stable/lib/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/QuantumCollocation/dev/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/QuantumCollocation/dev/generated/man/ipopt_callbacks/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/QuantumCollocation/dev/generated/man/problem_templates/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/QuantumCollocation/dev/generated/man/rollouts/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/QuantumCollocation/dev/lib/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/QuantumCollocationCore/dev/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/QuantumCollocationCore/dev/generated/explanation/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/QuantumCollocationCore/dev/lib/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/TrajectoryIndexingUtils/dev/</loc></url>
+<url><loc>https://kestrelquantum.github.io/Piccolo.jl/TrajectoryIndexingUtils/dev/search/</loc></url>
+</urlset>
