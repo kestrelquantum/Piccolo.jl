@@ -1,4 +1,4 @@
-name: External Meta Update Recieve
+name: External Meta Update Receive
 on:
   repository_dispatch:
     types: [meta-update-qc]
