@@ -91,8 +91,8 @@ docs = [
     ),
     MultiDocumenter.MultiDocRef(
         upstream = joinpath(clonedir, "PiccoloQuantumObjects"),
-        path = "Quantum Objects",
-        name = "PiccoloQuantumObjects.jl",
+        path = "PiccoloQuantumObjects",
+        name = "Quantum Objects",
         giturl = "https://github.com/kestrelquantum/PiccoloQuantumObjects.jl.git",
     ),
     MultiDocumenter.DropdownNav(
@@ -133,8 +133,8 @@ docs = [
     ),
     MultiDocumenter.MultiDocRef(
         upstream = joinpath(clonedir, "PiccoloPlots"),
-        path = "Plotting",
-        name = "PiccoloPlots.jl",
+        path = "PiccoloPlots",
+        name = "Plots",
         giturl = "https://github.com/kestrelquantum/PiccoloPlots.jl.git",
     ),
 ]
