@@ -26,7 +26,7 @@ pages = [
 
 format = Documenter.HTML(;
     prettyurls = get(ENV, "CI", "false") == "true",
-    canonical = "https://kestrelquantum.github.io/",
+    canonical = "https://docs.harmoniqs.co/Piccolo.jl",
     edit_link = "main",
     assets = String[],
     mathengine = MathJax3(
@@ -61,7 +61,4 @@ makedocs(;
     warnonly = true,
 )
 
-deploydocs(;
-    repo="github.com/kestrelquantum/Piccolo.jl.git",
-    devbranch="main",
-)
+deploydocs(; repo = "github.com/harmoniqs/Piccolo.jl.git", devbranch = "main")

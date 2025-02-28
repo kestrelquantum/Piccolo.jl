@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We welcome contributiuons to Piccolo.jl! This document outlines the guidelines for contributing to the project. If you know what you want to see, but are unsure of the best way to achieve it, add an issue on the relevant repository [(like QuantumCollocation.jl)](https://github.com/kestrelquantum/QuantumCollocation.jl/issues) and start a discussion with the community! 
+We welcome contributiuons to Piccolo.jl! This document outlines the guidelines for contributing to the project. If you know what you want to see, but are unsure of the best way to achieve it, add an issue on the relevant repository [(like QuantumCollocation.jl)](https://github.com/harmoniqs/QuantumCollocation.jl/issues) and start a discussion with the community! 
 
 ### Tips for Visual Studio Code
 __Julia extension__ You can run Julia notebooks and much more with [the Julia extension](https://code.visualstudio.com/docs/languages/julia). Upon opening your project folder in VS code and attempting to run an `.ipynb`, you will see that VS Code finds the interpreters managed by juliaup and defaults to using the environment based on the _Project.toml_ in the project directory.
@@ -44,7 +44,7 @@ using NamedTrajectories
 
 These are two packages (_QuantumCollocation_, _NamedTrajetories_) inside [Piccolo](https://docs.juliahub.com/General/Piccolo/stable/). 
 
-As a developer, we want to use the git repositories directly from [the Kestrel Quantum Github page](https://github.com/kestrelquantum). Clone, then add the local packages to the Project file with e.g. `dev ../relative/path/to/repo/QuantumCollocation`. This command installs the development version of _QuantumCollocation_ pointing to the local Github code instead of the package repository. You can repeat this for the others, also.
+As a developer, we want to use the git repositories directly from [the Kestrel Quantum Github page](https://github.com/harmoniqs). Clone, then add the local packages to the Project file with e.g. `dev ../relative/path/to/repo/QuantumCollocation`. This command installs the development version of _QuantumCollocation_ pointing to the local Github code instead of the package repository. You can repeat this for the others, also.
 
 __Revise__
 [Revise.jl](https://timholy.github.io/Revise.jl/stable/) will let you edit source code, update packages, and reload the changes in a notebook---automatically! This is a great tool for development. `add Revise` from the REPL and then include it before any packages you intend to edit:
