@@ -1,6 +1,6 @@
 <!--```@raw html-->
 <div align="center">
-  <a href="https://github.com/kestrelquantum/Piccolo.jl">
+  <a href="https://github.com/harmoniqs/Piccolo.jl">
     <img src="assets/piccolo_logo.svg" alt="Piccolo.jl" width="25%"/>
   </a> 
 </div>
@@ -11,21 +11,21 @@
       <td align="center">
         <b>Documentation</b>
         <br>
-        <a href="https://kestrelquantum.github.io/Piccolo.jl/stable/">
+        <a href="https://harmoniqs.github.io/Piccolo.jl/stable/">
           <img src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable"/>
         </a>
-        <a href="https://kestrelquantum.github.io/Piccolo.jl/dev/">
+        <a href="https://harmoniqs.github.io/Piccolo.jl/dev/">
           <img src="https://img.shields.io/badge/docs-dev-blue.svg" alt="Dev"/>
         </a>
       </td>
       <td align="center">
         <b>Build Status</b>
         <br>
-        <a href="https://github.com/kestrelquantum/Piccolo.jl/actions/workflows/CI.yml?query=branch%3Amain">
-          <img src="https://github.com/kestrelquantum/Piccolo.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status"/>
+        <a href="https://github.com/harmoniqs/Piccolo.jl/actions/workflows/CI.yml?query=branch%3Amain">
+          <img src="https://github.com/harmoniqs/Piccolo.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status"/>
         </a>
-        <a href="https://codecov.io/gh/kestrelquantum/Piccolo.jl">
-          <img src="https://codecov.io/gh/kestrelquantum/Piccolo.jl/branch/main/graph/badge.svg" alt="Coverage"/>
+        <a href="https://codecov.io/gh/harmoniqs/Piccolo.jl">
+          <img src="https://codecov.io/gh/harmoniqs/Piccolo.jl/branch/main/graph/badge.svg" alt="Coverage"/>
         </a>
       </td>
       <td align="center">
@@ -50,11 +50,11 @@
 ### Description
 **Piccolo.jl** is a meta-package for quantum optimal control using the Pade Integrator Collocation (Piccolo) method. This package reexports the following packages
 
-- [QuantumCollocation.jl](https://github.com/kestrelquantum/QuantumCollocation.jl)
-- [NamedTrajectories.jl](https://github.com/kestrelquantum/NamedTrajectories.jl)
-- [TrajectoryIndexingUtils.jl](https://github.com/kestrelquantum/TrajectoryIndexingUtils.jl)
-- [PiccoloQuantumObjects.jl](https://github.com/kestrelquantum/PiccoloQuantumObjects.jl)
-- [PiccoloPlots.jl](https://github.com/kestrelquantum/PiccoloPlots.jl)
+- [QuantumCollocation.jl](https://github.com/harmoniqs/QuantumCollocation.jl)
+- [NamedTrajectories.jl](https://github.com/harmoniqs/NamedTrajectories.jl)
+- [TrajectoryIndexingUtils.jl](https://github.com/harmoniqs/TrajectoryIndexingUtils.jl)
+- [PiccoloQuantumObjects.jl](https://github.com/harmoniqs/PiccoloQuantumObjects.jl)
+- [PiccoloPlots.jl](https://github.com/harmoniqs/PiccoloPlots.jl)
 
 For documentation please see the individual packages.
 
