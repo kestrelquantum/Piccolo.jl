@@ -44,7 +44,7 @@ using NamedTrajectories
 
 These are two packages (_QuantumCollocation_, _NamedTrajetories_) inside [Piccolo](https://docs.juliahub.com/General/Piccolo/stable/). 
 
-As a developer, we want to use the git repositories directly from [the Kestrel Quantum Github page](https://github.com/harmoniqs). Clone, then add the local packages to the Project file with e.g. `dev ../relative/path/to/repo/QuantumCollocation`. This command installs the development version of _QuantumCollocation_ pointing to the local Github code instead of the package repository. You can repeat this for the others, also.
+As a developer, we want to use the git repositories directly from [the harmoniqs Quantum Github page](https://github.com/harmoniqs). Clone, then add the local packages to the Project file with e.g. `dev ../relative/path/to/repo/QuantumCollocation`. This command installs the development version of _QuantumCollocation_ pointing to the local Github code instead of the package repository. You can repeat this for the others, also.
 
 __Revise__
 [Revise.jl](https://timholy.github.io/Revise.jl/stable/) will let you edit source code, update packages, and reload the changes in a notebook---automatically! This is a great tool for development. `add Revise` from the REPL and then include it before any packages you intend to edit:
